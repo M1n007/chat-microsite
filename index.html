@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Chat Microsite</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body id="app" style="background-color:#fafafa;">
+    <div class="chat">
+        <div class="bg-chat chat-page">
+            <div class="nav-nav bg-white">
+                <div class="nav-container">
+                    <div style="display:flex; flex-direction:row;align-items:center;justify-content:center;">
+                        <a replace style="margin-left:10px;">
+                            <img alt="back button image" src="https://shop.halosis.app/img/back.bce84ce0.svg"/>
+                        </a>
+                        <a href="#" class="chat-bot--on chat-bot" style="margin-left:5px;">
+                            <img alt="bot icon image" src="./assets/img/avatar.png" class="chat-bot__image" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="content-header">
+                            <span>Chat Microsite</span>
+                        </a>
+                    </div>
+                    <div style="margin-right:15px;width:55px;">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-section mb-60" style="margin-top:70px !important;">
+                <div>
+                    <div class="chat-section__wrapper">
+                        <div class="chat-item-post chat-item-post--in">
+                            <div class="chat-message wrap-message">
+                                <div style="display:flex; flex-direction:row;align-items:center;justify-content:center;">
+                                    <img class="chat-message__text" src="./assets/img/sticker-sample.png"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="chat-section__wrapper">
+                        <div class="chat-item-post chat-item-post--in bubble-chat-seller">
+                            <div class="chat-message wrap-message">
+                                <div style="display:flex; flex-direction:row;align-items:center;justify-content:center;">
+                                    <span class="chat-message__text">Halo, Saya Ninja, Asisten Virtual dari lineartgrafis.</span>
+                                    <span class="chat-info__time" style="margin-left: 10px;margin-top:25px;">00:01</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="chat-section__wrapper">
+                        <div class="chat-item-post chat-item-post--in bubble-chat-seller">
+                            <div class="chat-message wrap-message">
+                                <div style="display:flex; flex-direction:row;align-items:center;justify-content:center;">
+                                    <span class="chat-message__text">Silahkan pilih opsi dibawah ini</span>
+                                    <span class="chat-info__time" style="margin-left: 10px;margin-top:25px;">00:02</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-item-post chat-item-post--in">
+                            <div class="chat-card">
+                                <div class="chat-card__section text-center" style="background-color: #fff;">
+                                    <a href="#" class="text-blue text-semi-bold">
+                                        Beli Barang
+                                    </a>
+                                </div>
+                                <div class="chat-card__section text-center" style="background-color: #fff;">
+                                    <a href="#" class="text-blue text-semi-bold">
+                                        Help
+                                    </a>
+                                </div>
+                                <div class="chat-card__section text-center" style="background-color: #fff;">
+                                    <a href="#" class="text-semi-bold" style="color: rgb(85, 85, 85); opacity: 0.6;">
+                                        About Us
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="chat-section__wrapper">
+                        <div class="chat-item-post chat-item-post--out">
+                            <div class="chat-message wrap-message">
+                                <div style="display:flex; flex-direction:row;align-items:center;justify-content:center;">
+                                    <span class="chat-message__text">Bantu Saya Menulis ini</span>
+                                    <div style="display:flex; flex-direction:row;align-items:center;justify-content:center;margin-left: 10px;margin-top:25px;">
+                                        <span class="chat-info__time" style="color: #fff;">00:02</span>
+                                        <img src="https://shop.halosis.app/img/webchat-halosis-icon-message-status-read-white.7c585691.svg" width="20" style="margin-left:9px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-message chat-message--input" style="padding-bottom:10px;padding-top:10px">
+                <div class="h-menus" id="h-menus" style="display: none;">
+                    <div class="h-list">RIWAYAT ORDER</div>
+                    <div class="h-list">UPLOAD BUKTI TRANSFER</div>
+                    <div class="h-list">MULAI ULANG BOT</div>
+                </div>
+                <div class="d-flex w-100">
+                    <button onclick="showMenu()">
+                        <a href="#">
+                            <img src="https://shop.halosis.app/img/burger-menu-icon.83adf6ca.svg" alt="burger menu icon" class="img-res c-pointer"/>
+                        </a>
+                    </button>
+                    <div contenteditable="true" placeholder="Ketik disini...." class="edit" spellcheck="false"> </div>
+                    <button>
+                        <img src="https://shop.halosis.app/img/webchat-halosis-icon-send.9ebe3df8.svg" alt="send icon" class="img-res" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showMenu() {
+            var x = document.getElementById("h-menus");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
